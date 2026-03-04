@@ -77,7 +77,41 @@ nav li a:hover {
     display: none;
 }
 /*nav ends, home begins*/
-
+.hero {
+    height: 100vh;
+    background-image: url(../img/darkgrain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sitename {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+.sitename img {
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+}
+@keyframes shimmer {
+    0% {
+        filter: drop-shadow(0 0 0px
+        rgba(255, 255, 255, 0.5));
+    }
+    50% {
+        filter: drop-shadow( 0 0 10px
+        rgba(255, 255, 255, 0.6));
+    }
+    100% {
+        filter: drop-shadow( 0 0 0px
+        rgba(255, 255, 255, 0.5));
+    }
+}
+.shimmer {
+    animation: shimmer 5s infinite;
+}
 
 @media screen and (min-width: 800px) {
  .navTogglerMenu {
@@ -101,6 +135,13 @@ nav li a:hover {
  nav li {
     border-bottom: none;
  }
+ /*nav ends, home begins*/
+ .sitename {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+}
 }
 
 @media screen and (min-width: 1200px) {
