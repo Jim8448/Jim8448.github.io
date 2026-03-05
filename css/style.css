@@ -112,6 +112,16 @@ nav li a:hover {
 .shimmer {
     animation: shimmer 5s infinite;
 }
+.sitebrand {
+    color: #5ce1e7;
+    font-size: 1.5rem;
+    font-family: "Merriweather", serif;
+    line-height: 1.7;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+}
 footer {
     color: azure;
     text-align: center;
@@ -151,6 +161,11 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 250px;
+}
+.sitebrand {
+    max-width: 100%;
+    font-size: 2.2rem;
+    margin: 7rem auto;
 }
 }
 
