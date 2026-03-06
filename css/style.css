@@ -65,7 +65,7 @@ nav li a:hover {
     align-items: center;
 }
 .mi {
-    color: #ffffff;
+    color: azure;
 }
 .menuClose {
     display: none;
@@ -122,6 +122,40 @@ nav li a:hover {
     margin: 0 auto;
     font-weight: 700;
 }
+/*home ends, about begins*/
+.aboutsec {
+    background-image: url(../img/about_bg.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 12rem;
+}
+.abouth1 {
+ color: azure;
+ text-align: center;
+ font-size: 3rem;
+ line-height: 2;
+ margin-bottom: 2rem;
+ font-family: "Merriweather", serif;
+}
+.ap {
+    text-align: center;
+    color: azure;
+    padding: 3rem 1.5rem;
+    line-height: 2;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+}
+.span {
+    font-size: 2.5rem;
+    color: #5ce1e7;
+    font-weight: 600;
+}
 footer {
     color: azure;
     text-align: center;
@@ -129,7 +163,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding-top: 1rem;
+    padding-top: 1.3rem;
     font-family: "Inter", sans-serif;
 }
 
@@ -166,6 +200,19 @@ footer {
     max-width: 100%;
     font-size: 2.2rem;
     margin: 7rem auto;
+}
+/*home ends, about begins*/
+.aboutsec {
+    padding-top: 6rem;
+    margin-bottom: 1rem;
+}
+.abouth1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.ap {
+    max-width: 800px;
+    padding: 1rem 1.5rem;
 }
 }
 
