@@ -124,7 +124,12 @@ nav ul li a.active {
     text-align: center;
     margin: 0 auto;
     font-weight: 700;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 /*home ends, about begins*/
 .aboutsec {
     background-image: url(../img/about_bg.jpg);
@@ -172,7 +177,7 @@ nav ul li a.active {
 }
 /*about ends, portfolio begins*/
 .portsec1 {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/grain4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,12 +188,299 @@ nav ul li a.active {
     justify-content: flex-start;
     padding-top: 12rem;
 }
+.portmenu {
+    margin-top: 11rem;
+}
 .porth1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Merriweather", serif;
     color: azure;
 }
+.portmenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 400px;
+}
+.portmenu li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: inline-block;
+}
+.portmenu li a:hover {
+    color: #2baeb5;
+    transform: scale(1.1) translateY(3px);
+}
+/*portfolio ends, sub-pages begins*/
+/*sub-pages begin*/
+/*Web Design Projects*/
+.wdsec1 {
+    background-image: url(../img/subcat1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.wdh1 {
+    font-size: 2.5rem;
+    color: azure;
+    font-family: "Merriweather", serif;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.wdprojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    gap: 4rem;
+    padding: 0 1rem;
+}
+.wdp1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdp1h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wdp1vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+/*first vid ends, second begins*/
+
+.wdp2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdp2h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wdp2vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+/*second vid ends, third begins*/
+.wdp3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdp3h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wdp3vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+/*third vid ends, fourth begins*/
+.wdp4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdp4vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+.wdp4h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/*web design ends, miscellaneous begins*/
+.miscbody {
+    background-image: url(../img/subcat3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.miscsec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+.misch1 {
+    color: azure;
+    font-size: 2.5rem;
+    padding-top: 10rem;
+    font-family: "Merriweather", serif;
+}
+.miscproj1h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Merriweather", serif;  
+    color: azure;
+    margin-bottom: 1rem;
+}
+.miscwork1 {
+    padding: 0 1rem;
+}
+.miscproj1img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px white;
+}
+.workdesc1 {
+    color: azure;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+    
+}
+
+.miscproj2h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Merriweather", serif;  
+    color: azure;
+    margin-bottom: 1rem;
+}
+.miscwork2 {
+    padding: 0 1rem;
+}
+.miscproj2img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px white;
+}
+.workdesc2 {
+    color: azure;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+    
+}
+
+/*contact begins*/
+.contactsec1 {
+background-image: url(../img/subcat2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: start;
+}
+.contacth1 {
+    color: azure;
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 10rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, #0a0a0a, #555555, #0fd1c5);
+    width: 80%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    margin-top: 5rem;
+    min-height: 400px;
+
+    
+}
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+   margin-bottom: 1rem;
+   padding: .75rem 1rem;
+   border: 2px solid #ccc;
+   font-size: 1rem;
+   transition: border-color 0.3s, box-shadow 0.3s;
+   box-sizing: border-box;
+}
+textarea {
+    min-height: 150px;
+}
+button {
+    padding: .5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+    margin: 1rem auto;
+    background-color: #5ce1e7;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    background-color: aquamarine;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*Contact Ends*/
 footer {
     color: azure;
     text-align: center;
@@ -227,12 +519,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 200px;
 }
 .sitebrand {
     max-width: 100%;
     font-size: 2.2rem;
-    margin: 7rem auto;
+    margin: 5rem auto;
 }
 /*home ends, about begins*/
 .aboutsec {
@@ -248,6 +540,31 @@ footer {
     padding: 3rem 1.5rem;
     transform: translateY(20px);
 }
+/*about ends, portfolio begins*/
+.porth1 {
+    font-size: 5rem;
+}
+.portmenu {
+    margin-top: 20rem;
+}
+.portmenu ul {
+    flex-direction: row;
+}
+.portmenu li a {
+    font-size: 3rem;
+}
+/*portfolio sub-pages*/
+/*Web Design*/
+.wdh1 {
+    font-size: 5rem;
+}
+/*Miscellaneous*/
+.misch1 {
+    font-size: 5rem;
+}
+/*portfolio ends, contact begins*/
+
+
 }
 
 @media screen and (min-width: 1200px) {
