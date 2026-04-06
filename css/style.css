@@ -414,6 +414,61 @@ nav ul li a.active {
     padding: 0 1rem;
     
 }
+.miscproj3h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Merriweather", serif;  
+    color: azure;
+    margin-bottom: 1rem;
+}
+.miscproj3img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px white;
+}
+.workdesc3 {
+    color: azure;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+.miscproj4h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Merriweather", serif;  
+    color: azure;
+    margin-bottom: 1rem;
+}
+.miscproj4img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px white;
+}
+.workdesc4 {
+    color: azure;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+
+
+
 
 /*contact begins*/
 .contactsec1 {
