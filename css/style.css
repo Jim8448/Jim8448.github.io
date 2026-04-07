@@ -326,6 +326,7 @@ nav ul li a.active {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 5rem;
 }
 .wdp4h2 {
   font-family: "Merriweather", serif;  
@@ -466,6 +467,33 @@ nav ul li a.active {
     padding: 0 1rem;
 }
 
+.miscproj5h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Merriweather", serif;  
+    color: azure;
+    margin-bottom: 1rem;
+}
+.miscproj5img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px white;
+}
+.workdesc5 {
+    color: azure;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+
 
 
 
@@ -476,11 +504,12 @@ background-image: url(../img/subcat2.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-height: 100vh;
+min-height: 100vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: start;
+padding-bottom: 3rem;
 }
 .contacth1 {
     color: azure;
@@ -533,6 +562,21 @@ button:hover {
     background-color: aquamarine;
     transform: scale(1.05);
     cursor: pointer;
+}
+.sm {
+    margin: 1.5rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.fb {
+    color: azure;
+    font-size: 3rem;
+}
+.ig {
+    color: azure;
+    font-size: 3rem;
 }
 
 /*Contact Ends*/
@@ -618,7 +662,18 @@ footer {
     font-size: 5rem;
 }
 /*portfolio ends, contact begins*/
-
+.contacth1 {
+    font-size: 5rem;
+   
+}
+.fb {
+    color: azure;
+    font-size: 6rem;
+}
+.ig {
+    color: azure;
+    font-size: 6rem;
+}
 
 }
 
