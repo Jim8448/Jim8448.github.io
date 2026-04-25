@@ -171,6 +171,7 @@ nav ul li a.active {
  line-height: 2;
  margin-bottom: 1.5rem;
  font-family: "Merriweather", serif;
+ padding-top: 5rem;
 }
 .ap {
     text-align: center;
