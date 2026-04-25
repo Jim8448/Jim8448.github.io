@@ -1003,8 +1003,8 @@ padding-bottom: 3rem;
     font-size: 2.5rem;
     font-family: "Merriweather", serif;
     text-align: center;
-    margin-bottom: 2rem;
-    padding-top: 10rem;
+    margin-bottom: 1rem;
+    padding-top: 12rem;
 }
 form {
     display: flex;
@@ -1015,8 +1015,7 @@ form {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-    margin-top: 5rem;
-    min-height: 400px;
+    margin-top: 2rem;
 
     
 }
@@ -1056,7 +1055,7 @@ button:hover {
     cursor: pointer;
 }
 .sm {
-    margin: 1.5rem 0 2rem;
+    margin: .5rem 0 .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1304,6 +1303,7 @@ footer {
 /*portfolio ends, contact begins*/
 .contacth1 {
     font-size: 5rem;
+    padding-top: 11.5rem;
    
 }
 .fb {
