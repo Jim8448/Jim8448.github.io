@@ -21,6 +21,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
+    box-shadow: 0 2px 9px white;
 }
 header h1 {
     margin-bottom: 0;
@@ -32,7 +33,7 @@ header h1 a {
     margin: .5rem 1rem;
 }
 header a img {
-    margin: 0 1rem;
+    margin: 2rem 1rem;
     order: 1;
 }
 nav {
@@ -81,7 +82,7 @@ nav ul li a.active {
 }
 /*nav ends, home begins*/
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/darkgrain.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -124,11 +125,31 @@ nav ul li a.active {
     text-align: center;
     margin: 0 auto;
     font-weight: 700;
+    min-height: 10rem;
 
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+.explore {
+    display: block;
+    margin: 4rem auto;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #4ac0d3;
+    font-weight: bold;
+    width: 100px;
+    padding: 0.75rem 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+    .explore:hover {
+        background-color: #5ce1e7;
+        transform: scale(1.05);
+    }
+    
+
 
 /*home ends, about begins*/
 .aboutsec {
@@ -233,7 +254,7 @@ nav ul li a.active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 20rem;
 }
 .wdh1 {
     font-size: 2.5rem;
@@ -247,7 +268,7 @@ nav ul li a.active {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
-    gap: 4rem;
+    gap: 10rem;
     padding: 0 1rem;
 }
 .wdp1 {
@@ -269,6 +290,7 @@ nav ul li a.active {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
 }
 /*first vid ends, second begins*/
 
@@ -291,6 +313,7 @@ nav ul li a.active {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
 }
 /*second vid ends, third begins*/
 .wdp3 {
@@ -312,6 +335,7 @@ nav ul li a.active {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
 }
 /*third vid ends, fourth begins*/
 .wdp4 {
@@ -326,7 +350,7 @@ nav ul li a.active {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 .wdp4h2 {
   font-family: "Merriweather", serif;  
@@ -335,6 +359,464 @@ nav ul li a.active {
   margin-bottom: 1rem;
   text-align: center;
 }
+/*fourth vid ends, fifth begins*/
+.wdp5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 7rem;
+}
+.wdp5vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+}
+.wdp5h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pd {
+    font-family: "Merriweather", serif; 
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease
+}
+.pd:hover {
+    color: #2baeb5;
+    transform: scale(1.1);
+}
+/*web design project details starts*/
+/*recipe site details*/
+.pdbody {
+background: radial-gradient(circle, #000000 0%, #000000 55%, #6e6e6e 80%, #ffffff 100%);
+}
+
+.rpdsec1 {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 2rem;
+}
+.rpdh1 {
+color: #2baeb5;
+text-align: center;
+font-size: 2.5rem;
+padding-top: 15rem;
+font-family: "Merriweather", serif;
+
+}
+.recipehero {
+  height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+}
+.rpdp {
+    color: azure;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.rpdsec2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.recipefig1 {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+}
+.recipeherocss {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+}
+.recipefigcap1 {
+    color: azure;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0;
+
+}
+.recipefig2 {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+}
+.recipejs {
+     width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+    
+}
+.recipefigcap2 {
+    color: black;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+     margin: 2rem 0 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+/*mag layout details*/
+.mldsec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.mldh1 {
+color: #2baeb5;
+text-align: center;
+font-size: 2.5rem;
+padding-top: 15rem;
+font-family: "Merriweather", serif;
+ }
+ .mlhero {
+    height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+ }
+ .mlpdp {
+    color: azure;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+ }
+ .mldsec2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ }
+ .mlfig1 {
+     width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+ }
+ .mlcssgrid1 {
+   width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff; 
+ }
+ .mlfigcap1 {
+    color: azure;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+ }
+ .mlfig2 {
+     width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+ }
+ .mlcssgrid2 {
+   width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff; 
+ }
+ .mlfigcap2 {
+    color: black;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+ }
+ /*Hero Section PD*/
+ .heropdsec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+  .heropdh1 {
+   color: #2baeb5;
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 15rem;
+   font-family: "Merriweather", serif;
+  }
+  .herohero {
+    height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .heropdp{
+    color: azure;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  .heropdsec2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+  }
+  .herofig1 {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero_herocss {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff; 
+  }
+  .herofigcap1 {
+    color: azure;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+  .herofig2 {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .herojquery {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .herofigcap2 {
+    color: black;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+  /*Single Page PD*/
+  .sppdsec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .sppdh1 {
+    color: #2baeb5;
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 15rem;
+   font-family: "Merriweather", serif;
+   line-height: 1.5;
+  }
+  .sphero {
+    height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .sppdp {
+    color: azure;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  .sppdsec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .spfig1 {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .spcss {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .spfigcap1 {
+    color: azure;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+  .spfig2 {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .spjs {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .spfigcap2 {
+    color: black;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+  /*Dragon Flame PD*/
+  .dfpdsec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .dfpdh1 {
+    color: #2baeb5;
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 15rem;
+   font-family: "Merriweather", serif;
+   line-height: 1.5;
+  }
+  .dfmobile {
+    height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .dfpdp {
+    color: azure;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  .dfpdsec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .dfpdfig1 {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .dfspritejs {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .dfpdfigcap1 {
+    color: azure;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+  .dfpdfig2 {
+     width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .dfstartjs {
+   width: 100%;
+    max-width: 430px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+  box-shadow: 2px 2px 9px #ffffff,
+              -2px 2px 9px #ffffff;
+  }
+  .dfpdfigcap2 {
+    color: black;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+/*project details end*/
 /*web design ends, miscellaneous begins*/
 .miscbody {
     background-image: url(../img/subcat3.jpg);
@@ -398,7 +880,7 @@ nav ul li a.active {
 }
 .miscproj2img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     display: block;
     margin: 1rem auto;
     border-radius: 8px;
@@ -450,7 +932,8 @@ nav ul li a.active {
 }
 .miscproj4img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
+    background-color: #000000;
     display: block;
     margin: 1rem auto;
     border-radius: 8px;
@@ -476,7 +959,7 @@ nav ul li a.active {
 }
 .miscproj5img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     display: block;
     margin: 1rem auto;
     border-radius: 8px;
@@ -492,6 +975,9 @@ nav ul li a.active {
     max-width: 600px;
     padding: 0 1rem;
     margin-bottom: 5rem;
+}
+.project {
+    margin-bottom: 10rem;
 }
 
 
@@ -522,7 +1008,7 @@ padding-bottom: 3rem;
 form {
     display: flex;
     flex-direction: column;
-    background: radial-gradient(circle, #0a0a0a, #555555, #0fd1c5);
+    /*background: radial-gradient(circle, #0a0a0a, #555555, #0fd1c5);*/
     width: 80%;
     max-width: 500px;
     padding: 2rem;
@@ -545,6 +1031,11 @@ input, textarea {
 }
 textarea {
     min-height: 150px;
+}
+input::placeholder,
+textarea::placeholder {
+    color: black;
+    opacity: 1;
 }
 button {
     padding: .5rem;
@@ -578,6 +1069,36 @@ button:hover {
     color: azure;
     font-size: 3rem;
 }
+.contact-form, .sm {
+    opacity: 0;
+    transform: translateY(60px);
+}
+.contact-form {
+    animation: contactFadeUp 1.9s ease forwards;
+    animation-delay: 0.2s;
+    width: 80%;
+    max-width: 500px;
+}
+.sm {
+    animation: contactFadeUp 1.9s ease forwards;
+    animation-delay: 0.8s;
+}
+@keyframes contactFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contact-form input,
+.contact-form textarea {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5ce1e7;
+    box-shadow: 0 0 10px rgba(92,255,231,0.35);
+    transform: scale(1.01);
+}
 
 /*Contact Ends*/
 footer {
@@ -589,6 +1110,7 @@ footer {
     bottom: 0;
     padding-top: 1.3rem;
     font-family: "Inter", sans-serif;
+    box-shadow: 0 -2px 9px white;
 }
 
 @media screen and (min-width: 800px) {
@@ -624,6 +1146,12 @@ footer {
     max-width: 100%;
     font-size: 2.2rem;
     margin: 5rem auto;
+    min-height: 2rem;
+}
+.explore {
+    font-size: 2rem;
+    width: 160px;
+    padding: 1rem 1.5rem;
 }
 /*home ends, about begins*/
 .aboutsec {
@@ -657,10 +1185,121 @@ footer {
 .wdh1 {
     font-size: 5rem;
 }
+.wdprojects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-auto-rows: auto;
+    align-items: start;
+}
+.wdprojects > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdprojects video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.wdprojects h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.pd {
+    font-size: 2rem;
+}
+/*Project Details Pages*/
+/*Recipe Site PD*/
+.rpdh1 {
+    font-size: 5rem;
+}
+.rpdsec2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+}
+.rpdsec2 figure {
+    max-width: 490px; 
+}
+.recipefigcap2 {
+    color: azure;
+    margin-bottom: 4rem;
+}
+.recipejs {
+    margin-bottom: 1rem;
+}
+/*Magazine Layout PD*/
+.mldh1 {
+    font-size: 5rem;
+}
+.mldsec2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+}
+.mldsec2 figure {
+    max-width: 490px; 
+}
+.mlfigcap2 {
+    color: azure;
+    margin-bottom: 4rem;
+}
+/*Hero Section PD*/
+.heropdh1 {
+    font-size: 5rem;
+}
+.heropdsec2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+}
+.heropdsec2 figure {
+    max-width: 430px; 
+}
+.herofigcap2 {
+    color: azure;
+    margin-bottom: 4rem;
+}
+/*Single Page PD*/
+.sppdsec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .spfigcap2 {
+    color: azure;
+  }
+  /*Dragon Flame PD*/
+  .dfpdsec2 {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+  }
+  .dfpdfigcap2 {
+    color: azure;
+  }
 /*Miscellaneous*/
 .misch1 {
     font-size: 5rem;
 }
+.project h2 {
+    font-size: 3rem;
+}
+.project p {
+    font-size: 2rem;
+}
+
+
 /*portfolio ends, contact begins*/
 .contacth1 {
     font-size: 5rem;
@@ -673,6 +1312,17 @@ footer {
 .ig {
     color: azure;
     font-size: 6rem;
+}
+textarea {
+    min-height: 250px;
+    resize: vertical;
+}
+.contact-form {
+    animation-duration: 1s;
+}
+.sm {
+    animation-duration: 1s;
+    animation-delay: 0.75s;
 }
 
 }
