@@ -22,6 +22,12 @@ header {
     z-index: 100;
     width: 100%;
     box-shadow: 0 2px 9px white;
+
+    transition: top .3s ease;
+    top: 0;
+}
+header.hide {
+    top: -120px;
 }
 header h1 {
     margin-bottom: 0;
@@ -87,17 +93,19 @@ nav ul li a.active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .sitename {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 250px;
+    padding: 10rem 2rem 0;
+    text-align: center;
 }
 .sitename img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    max-width: 1000px;
+    max-width: 650px;
 }
 @keyframes shimmer {
     0% {
@@ -211,13 +219,14 @@ nav ul li a.active {
     padding-top: 12rem;
 }
 .portmenu {
-    margin-top: 11rem;
+    margin-top: 16rem;
 }
 .porth1 {
     text-align: center;
     font-size: 2.5rem;
     font-family: "Merriweather", serif;
     color: azure;
+    padding-top: 5rem;
 }
 .portmenu ul {
     display: flex;
@@ -270,7 +279,7 @@ nav ul li a.active {
     align-items: center;
     max-width: 500px;
     gap: 10rem;
-    padding: 0 1rem;
+    padding: 0 1rem 3rem 1rem;
 }
 .wdp1 {
     display: flex;
@@ -366,7 +375,6 @@ nav ul li a.active {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 7rem;
 }
 .wdp5vid {
     width: 100%;
@@ -383,107 +391,122 @@ nav ul li a.active {
   margin-bottom: 1rem;
   text-align: center;
 }
-
+/*fifth ends, sixth begins*/
+.wdp6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdp6vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+}
+.wdp6h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/*videos end*/
 .pd {
-    font-family: "Merriweather", serif; 
-    display: inline-block;
-    transition: color 0.3s ease, transform 0.3s ease
+    transition: color 0.3s ease,
+                transform 0.3s ease,
+                text-shadow 0.3s ease;
 }
 .pd:hover {
     color: #2baeb5;
-    transform: scale(1.1);
+    cursor: pointer;
+    transform: scale(1.08);
+    text-shadow: 0 0 9px rgba(43, 174, 181, 0.6);
 }
 /*web design project details starts*/
-/*recipe site details*/
+/*Trinity Design PD*/
 .pdbody {
 background: radial-gradient(circle, #000000 0%, #000000 55%, #6e6e6e 80%, #ffffff 100%);
 }
 
-.rpdsec1 {
+.tdsec1 {
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
 padding: 2rem;
 }
-.rpdh1 {
+.tdh1 {
 color: #2baeb5;
 text-align: center;
 font-size: 2.5rem;
-padding-top: 15rem;
 font-family: "Merriweather", serif;
-
+padding-top: 15rem;
 }
-.recipehero {
-  height: auto;
-  width: 100%;
-  max-width: 700px;
-  margin: 3rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-}
-.rpdp {
+.pdp1 {
     color: azure;
-    text-align: center;
-    font-family: "Inter", sans-serif;
     line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 750px;
+}
+.tdsec2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.tdex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.tdimg {
+    width: 100%;
+    border-radius: 9px;
+    height: auto;
+    display: block;
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease;
+}
+.tdimg:hover {
+    transform: scale(1.04);
+}
+.tdfigcap {
+    text-align: center;
+    color: azure;
+    margin-top: 1rem;
+    font-family: "Inter", sans-serif;
+}
+.mobile-shot {
+    width: 55%;
+    max-width: 260px;
+    margin: 0 auto;
+}
+.desktop-shot {
     width: 100%;
     max-width: 700px;
-    padding: 2rem;
-    margin-bottom: 3rem;
+    margin: 0 auto;
 }
-.rpdsec2 {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
-}
-.recipefig1 {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
-}
-.recipeherocss {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-}
-.recipefigcap1 {
-    color: azure;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0;
-
-}
-.recipefig2 {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
-}
-.recipejs {
-     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-    
-}
-.recipefigcap2 {
-    color: black;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-     margin: 2rem 0 4rem 0;
-    line-height: 1.5;
-    font-size: 1.5rem;
+.tdex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
 }
 /*mag layout details*/
 .mldsec1 {
@@ -732,91 +755,6 @@ font-family: "Merriweather", serif;
     text-align: center;
     margin: 2rem 0 4rem 0;
   }
-  /*Dragon Flame PD*/
-  .dfpdsec1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    flex-direction: column;
-  }
-  .dfpdh1 {
-    color: #2baeb5;
-   text-align: center;
-   font-size: 2.5rem;
-   padding-top: 15rem;
-   font-family: "Merriweather", serif;
-   line-height: 1.5;
-  }
-  .dfmobile {
-    height: auto;
-  width: 100%;
-  max-width: 700px;
-  margin: 3rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-  }
-  .dfpdp {
-    color: azure;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    line-height: 1.5;
-    width: 100%;
-    max-width: 700px;
-    padding: 2rem;
-    margin-bottom: 3rem;
-  }
-  .dfpdsec2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .dfpdfig1 {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    padding: 2rem;
-  }
-  .dfspritejs {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-  }
-  .dfpdfigcap1 {
-    color: azure;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
-  }
-  .dfpdfig2 {
-     width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
-  }
-  .dfstartjs {
-   width: 100%;
-    max-width: 430px;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 10px;
-  box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-  }
-  .dfpdfigcap2 {
-    color: black;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
-  }
 /*project details end*/
 /*web design ends, miscellaneous begins*/
 .miscbody {
@@ -996,7 +934,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: start;
-padding-bottom: 3rem;
+padding: 9rem 0 3rem 0;
+text-align: left;
 }
 .contacth1 {
     color: azure;
@@ -1004,12 +943,20 @@ padding-bottom: 3rem;
     font-family: "Merriweather", serif;
     text-align: center;
     margin-bottom: 1rem;
-    padding-top: 12rem;
+    padding-top: 9rem;
+}
+.fa-check {
+    margin-right: 1rem;
+    color: #5ce1e7;
+}
+.contactul li {
+    color: azure;
+    padding: 2rem;
+    line-height: 1.5;
 }
 form {
     display: flex;
     flex-direction: column;
-    /*background: radial-gradient(circle, #0a0a0a, #555555, #0fd1c5);*/
     width: 80%;
     max-width: 500px;
     padding: 2rem;
@@ -1054,29 +1001,18 @@ button:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
-.sm {
-    margin: .5rem 0 .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-.fb {
-    color: azure;
-    font-size: 3rem;
-}
-.ig {
-    color: azure;
-    font-size: 3rem;
-}
 .contact-form, .sm {
     opacity: 0;
     transform: translateY(60px);
 }
+.formdiv {
+    width: 100%;
+    max-width: 500px;
+}
 .contact-form {
     animation: contactFadeUp 1.9s ease forwards;
     animation-delay: 0.2s;
-    width: 80%;
+    width: 100%;
     max-width: 500px;
 }
 .sm {
@@ -1102,15 +1038,41 @@ button:hover {
 
 /*Contact Ends*/
 footer {
+   padding: 4rem 2rem;
+   background-color: #000000;
+   box-shadow: 0 -2px 9px white;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-logo {
+    margin: 0 0 1rem;
+}
+.footer-logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+ 
+}
+.footer-social a {
     color: azure;
-    text-align: center;
-    background-color: #000000;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    padding-top: 1.3rem;
-    font-family: "Inter", sans-serif;
-    box-shadow: 0 -2px 9px white;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+}
+.footer-social a:hover {
+    transform: scale(1.30);
+}
+.footer-nav {
+    display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -1140,7 +1102,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 300px;
 }
 .sitebrand {
     max-width: 100%;
@@ -1156,7 +1118,6 @@ footer {
 /*home ends, about begins*/
 .aboutsec {
     padding-top: 12rem;
-    margin-bottom: 1rem;
 }
 .abouth1 {
   font-size: 5rem;
@@ -1176,6 +1137,7 @@ footer {
 }
 .portmenu ul {
     flex-direction: row;
+    transform: translateX(60px);
 }
 .portmenu li a {
     font-size: 3rem;
@@ -1214,25 +1176,20 @@ footer {
     font-size: 2rem;
 }
 /*Project Details Pages*/
-/*Recipe Site PD*/
-.rpdh1 {
+/*Trinity Design PD*/
+.tdh1 {
     font-size: 5rem;
 }
-.rpdsec2 {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: row;
+.tdex1 {
+    flex-direction: row;
+    align-items: center;
 }
-.rpdsec2 figure {
-    max-width: 490px; 
+.tdex2 {
+    flex-direction: row;
+    align-items: center;
 }
-.recipefigcap2 {
-    color: azure;
-    margin-bottom: 4rem;
-}
-.recipejs {
-    margin-bottom: 1rem;
+.tdfigcap {
+    font-size: 2rem;
 }
 /*Magazine Layout PD*/
 .mldh1 {
@@ -1278,16 +1235,6 @@ footer {
   .spfigcap2 {
     color: azure;
   }
-  /*Dragon Flame PD*/
-  .dfpdsec2 {
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row; 
-  }
-  .dfpdfigcap2 {
-    color: azure;
-  }
 /*Miscellaneous*/
 .misch1 {
     font-size: 5rem;
@@ -1301,18 +1248,19 @@ footer {
 
 
 /*portfolio ends, contact begins*/
+.contactsec1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
 .contacth1 {
     font-size: 5rem;
-    padding-top: 11.5rem;
-   
+    padding-top: 0;
 }
-.fb {
-    color: azure;
-    font-size: 6rem;
-}
-.ig {
-    color: azure;
-    font-size: 6rem;
+.infodiv, .formdiv {
+    flex: 1;
+    max-width: 500px;
 }
 textarea {
     min-height: 250px;
@@ -1324,6 +1272,58 @@ textarea {
 .sm {
     animation-duration: 1s;
     animation-delay: 0.75s;
+}
+/*contact ends, footer begins*/
+footer {
+    padding: 3rem 5rem;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.footer-logo {
+    margin: 0;
+    margin-right: auto;
+}
+.footer-logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+.footer-nav {
+    display: block;
+    margin-left: -2rem;
+}
+.footer-nav ul {
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color .3s ease;
+}
+.footer-nav a:hover {
+    color: #5ce1e7;
+}
+.footer-social {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+    margin-top: 0;
+}
+.footer-social a {
+    color: azure;
+    font-size: 2.5rem;
 }
 
 }
