@@ -41,6 +41,8 @@ header h1 a {
 header a img {
     margin: 2rem 1rem;
     order: 1;
+    height: 60px;
+    width: 60px;
 }
 nav {
     position: absolute;
@@ -106,23 +108,6 @@ nav ul li a.active {
     width: 100%;
     height: auto;
     max-width: 650px;
-}
-@keyframes shimmer {
-    0% {
-        filter: drop-shadow(0 0 0px
-        rgba(255, 255, 255, 0.5));
-    }
-    50% {
-        filter: drop-shadow( 0 0 10px
-        rgba(255, 255, 255, 0.9));
-    }
-    100% {
-        filter: drop-shadow( 0 0 0px
-        rgba(255, 255, 255, 0.5));
-    }
-}
-.shimmer {
-    animation: shimmer 4.5s infinite;
 }
 .sitebrand {
     color: #5ce1e7;
@@ -265,6 +250,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     padding-top: 20rem;
+    padding-bottom: 5rem;
 }
 .wdh1 {
     font-size: 2.5rem;
@@ -445,13 +431,14 @@ font-size: 2.5rem;
 font-family: "Merriweather", serif;
 padding-top: 15rem;
 }
-.pdp1 {
+.tdp1 {
     color: azure;
     line-height: 1.5;
     font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     width: 100%;
     max-width: 750px;
+    text-align: left;
 }
 .tdsec2 {
     display: flex;
@@ -485,7 +472,7 @@ padding-top: 15rem;
 .tdfigcap {
     text-align: center;
     color: azure;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-family: "Inter", sans-serif;
 }
 .mobile-shot {
@@ -493,7 +480,7 @@ padding-top: 15rem;
     max-width: 260px;
     margin: 0 auto;
 }
-.desktop-shot {
+.desktop-shot, .tdfig {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
@@ -508,179 +495,199 @@ padding-top: 15rem;
     max-width: 1200px;
     padding-bottom: 3rem;
 }
-/*mag layout details*/
-.mldsec1 {
+.tdexcode1, .tdexcode2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.tdexcodeh2 {
+    color: #2baeb5;
+     font-family: "Merriweather", serif;
+}
+.tdfigcode {
+    padding-bottom: 5rem;
+}
+/*art head layout details*/
+.ahsec1 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
 }
-.mldh1 {
+.ahh1 {
 color: #2baeb5;
 text-align: center;
 font-size: 2.5rem;
 padding-top: 15rem;
 font-family: "Merriweather", serif;
  }
- .mlhero {
-    height: auto;
-  width: 100%;
-  max-width: 700px;
-  margin: 3rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
- }
- .mlpdp {
+ .ahp1 {
     color: azure;
-    text-align: center;
     font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 750px;
+    text-align: left;
     line-height: 1.5;
+ }
+ .ahsec2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.ahex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.ahimg {
+    width: 100%;
+    border-radius: 9px;
+    height: auto;
+    display: block;
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease;
+}
+.ahimg:hover {
+    transform: scale(1.04);
+}
+.ahfigcap {
+    text-align: center;
+    color: azure;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+}
+.mobile-shot {
+    width: 55%;
+    max-width: 260px;
+    margin: 0 auto;
+}
+.desktop-shot {
     width: 100%;
     max-width: 700px;
-    padding: 2rem;
-    margin-bottom: 3rem;
- }
- .mldsec2 {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- }
- .mlfig1 {
-     width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
- }
- .mlcssgrid1 {
-   width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff; 
- }
- .mlfigcap1 {
-    color: azure;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
- }
- .mlfig2 {
-     width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
- }
- .mlcssgrid2 {
-   width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff; 
- }
- .mlfigcap2 {
-    color: black;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
- }
+    margin: 0 auto;
+}
+.ahex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.ahexcode1, .ahexcode2 {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem; 
+    margin: 0 auto;
+}
+.ahexcodeh2 {
+   color: #2baeb5;
+   font-family: "Merriweather", serif; 
+}
+.ahfigcode {
+    padding-bottom: 5rem;
+}
  /*Hero Section PD*/
- .heropdsec1 {
+ .herosec1 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
 }
-  .heropdh1 {
+  .heroh1 {
    color: #2baeb5;
    text-align: center;
    font-size: 2.5rem;
    padding-top: 15rem;
    font-family: "Merriweather", serif;
   }
-  .herohero {
-    height: auto;
-  width: 100%;
-  max-width: 700px;
-  margin: 3rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-  }
-  .heropdp{
+  
+  .herop1{
     color: azure;
-    text-align: center;
+    text-align: left;
     font-family: "Inter", sans-serif;
     line-height: 1.5;
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
     padding: 2rem;
-    margin-bottom: 3rem;
+    font-size: 1.6rem;
   }
-  .heropdsec2 {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
+  .heroex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 3rem
   }
-  .herofig1 {
+  .heroimg {
     width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
-  }
-  .hero_herocss {
-    width: 100%;
+    border-radius: 9px;
     height: auto;
     display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff; 
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease; 
   }
-  .herofigcap1 {
+  .heroimg:hover {
+    transform: scale(1.04);
+}
+  .herofigcap {
+    text-align: center;
     color: azure;
-    font-weight: 600;
+    margin-top: 2rem;
     font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
   }
-  .herofig2 {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 2rem;
+  .heroexcode1, .heroexcode2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem; 
+    margin: 0 auto;
   }
-  .herojquery {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
+  .heroexcodeh2 {
+    color: #2baeb5;
+   font-family: "Merriweather", serif;
   }
-  .herofigcap2 {
-    color: black;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
+  .heroexcode2 {
+    padding-bottom: 7rem;
   }
-  /*Single Page PD*/
-  .sppdsec1 {
+   /*Single Page PD*/
+  .spsec1 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     flex-direction: column;
   }
-  .sppdh1 {
+  .sph1 {
     color: #2baeb5;
    text-align: center;
    font-size: 2.5rem;
@@ -688,18 +695,9 @@ font-family: "Merriweather", serif;
    font-family: "Merriweather", serif;
    line-height: 1.5;
   }
-  .sphero {
-    height: auto;
-  width: 100%;
-  max-width: 700px;
-  margin: 3rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
-  }
-  .sppdp {
+  .spp {
     color: azure;
-    text-align: center;
+    text-align: left;
     font-family: "Inter", sans-serif;
     line-height: 1.5;
     width: 100%;
@@ -707,54 +705,240 @@ font-family: "Merriweather", serif;
     padding: 2rem;
     margin-bottom: 3rem;
   }
-  .sppdsec2 {
+  .spsec2 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 2rem;
+    align-items: center;
     flex-direction: column;
-  }
-  .spfig1 {
+}
+.spex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.spimg {
     width: 100%;
-    max-width: 430px;
-    text-align: center;
-    padding: 2rem;
-  }
-  .spcss {
-    width: 100%;
+    border-radius: 9px;
     height: auto;
     display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease; 
   }
-  .spfigcap1 {
+  .spimg:hover {
+    transform: scale(1.04);
+}
+.spfigcap {
+    text-align: center;
     color: azure;
-    font-weight: 600;
+    margin-top: 2rem;
     font-family: "Inter", sans-serif;
-    text-align: center;
-    margin: 2rem 0 4rem 0;
   }
-  .spfig2 {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
+.spex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.spexcode1, .spexcode2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem; 
+    margin: 0 auto;
+  }
+  .spexcodeh2 {
+    color: #2baeb5;
+   font-family: "Merriweather", serif;
+  }
+  /*Magazine layout PD*/
+.mlsec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-  }
-  .spjs {
+    flex-direction: column;
+    min-height: 50vh;
+}
+.mlh1 {
+    color: #2baeb5;
+    font-family: "Merriweather", serif;
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 15rem;
+   line-height: 1.5;
+}
+.mlp {
+    text-align: left;
+    color: azure;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
     width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.mlsec2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.mlex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.mlimg {
+    width: 100%;
+    border-radius: 9px;
     height: auto;
     display: block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 9px #ffffff,
-              -2px 2px 9px #ffffff;
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease; 
   }
-  .spfigcap2 {
-    color: black;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
+  .mlimg:hover {
+    transform: scale(1.04);
+}
+.mlfigcap {
     text-align: center;
-    margin: 2rem 0 4rem 0;
+    color: azure;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
   }
+  .mlex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.mlexcode1, .mlexcode2 {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem; 
+    margin: 0 auto; 
+}
+.mlexcodeh2 {
+color: #2baeb5;
+font-family: "Merriweather", serif;
+}
+/*Recipe website PD*/
+.recipesec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.recipeh1 {
+    font-size: 2.5rem;
+    padding-top: 15rem;
+    color: #2baeb5;
+    font-family: "Merriweather", serif;
+    line-height: 1.5;
+}
+.recipep {
+   text-align: left;
+    color: azure;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin-bottom: 3rem; 
+}
+.recipesec2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.recipeex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.recipeimg {
+    width: 100%;
+    border-radius: 9px;
+    height: auto;
+    display: block;
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease; 
+  }
+  .recipeimg:hover {
+    transform: scale(1.04);
+}
+.recipefigcap {
+    text-align: center;
+    color: azure;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+  }
+  .recipeex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.recipeexcode1, .recipeexcode2 {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem; 
+    margin: 0 auto;  
+}
+.recipeexcodeh2 {
+color: #2baeb5;
+font-family: "Merriweather", serif 
+}
+
 /*project details end*/
 /*web design ends, miscellaneous begins*/
 .miscbody {
@@ -1191,50 +1375,80 @@ footer {
 .tdfigcap {
     font-size: 2rem;
 }
-/*Magazine Layout PD*/
-.mldh1 {
-    font-size: 5rem;
+.tdexcode2 {
+    flex-direction: row;
 }
-.mldsec2 {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: row;
-}
-.mldsec2 figure {
-    max-width: 490px; 
-}
-.mlfigcap2 {
-    color: azure;
-    margin-bottom: 4rem;
-}
-/*Hero Section PD*/
-.heropdh1 {
-    font-size: 5rem;
-}
-.heropdsec2 {
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: row;
-}
-.heropdsec2 figure {
-    max-width: 430px; 
-}
-.herofigcap2 {
-    color: azure;
-    margin-bottom: 4rem;
-}
-/*Single Page PD*/
-.sppdsec2 {
+/*Arthead Layout PD*/
+.ahsec1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.ahh1 {
+    font-size: 5rem;
+    color: #2baeb5;
+}
+
+.ahex1 {
     flex-direction: row;
-  }
-  .spfigcap2 {
-    color: azure;
-  }
+    align-items: center;
+}
+.ahex2 {
+    flex-direction: row;
+    align-items: center;
+}
+.ahexcode2 {
+    flex-direction: row;
+}
+
+/*Hero Section PD*/
+.heroh1 {
+    font-size: 5rem;
+}
+.heroex1 {
+    flex-direction: row;
+    align-items: center;
+}
+.heroexcode2 {
+    flex-direction: row;
+}
+.spex1, .spex2 {
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Single Page PD*/
+.sph1 {
+    font-size: 5rem;
+}
+.spexcode2 {
+    flex-direction: row;
+}
+/*Editorial Layout PD*/
+.mlh1 {
+    font-size: 5rem;
+}
+.mlex1, .mlex2 {
+    flex-direction: row;
+    align-items: center;
+}
+.mlexcode2 {
+    flex-direction: row;
+}
+/*Recipe website PD*/
+.recipeh1 {
+    font-size: 5rem;
+}
+.recipeex1, .recipeex2 {
+    flex-direction: row;
+    align-items: center;
+}
+.recipeexcode2 {
+    flex-direction: row;
+}
+
+
+
 /*Miscellaneous*/
 .misch1 {
     font-size: 5rem;
