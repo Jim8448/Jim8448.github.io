@@ -100,6 +100,13 @@ nav ul li a.active {
     align-items: center;
     flex-direction: column;
 }
+.herocontentdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
 .sitename {
     padding: 10rem 2rem 0;
     text-align: center;
@@ -107,7 +114,14 @@ nav ul li a.active {
 .sitename img {
     width: 100%;
     height: auto;
-    max-width: 650px;
+    max-width: 550px;
+}
+.portprofile {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    padding-bottom: 2rem;
+    border-radius: 9px;
 }
 .sitebrand {
     color: #5ce1e7;
@@ -393,6 +407,28 @@ nav ul li a.active {
     margin-bottom: 1rem;
 }
 .wdp6h2 {
+  font-family: "Merriweather", serif;  
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/*sixth ends, seventh begins*/
+.wdp7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wdp7vid {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+}
+.wdp7h2 {
   font-family: "Merriweather", serif;  
   color: azure;
   font-size: 2rem;
@@ -1282,11 +1318,15 @@ footer {
     border-bottom: none;
  }
  /*nav ends, home begins*/
+ .hero {
+    padding-top: 15rem;
+    box-sizing: border-box;
+ }
  .sitename {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 300px;
+    padding-top: 0;
 }
 .sitebrand {
     max-width: 100%;
@@ -1298,6 +1338,16 @@ footer {
     font-size: 2rem;
     width: 160px;
     padding: 1rem 1.5rem;
+}
+.herocontentdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.portprofile {
+    padding-bottom: 0;
 }
 /*home ends, about begins*/
 .aboutsec {
