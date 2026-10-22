@@ -1014,7 +1014,7 @@ font-family: "Merriweather", serif
     line-height: 1.5;  
 }
 .venuspdp {
- text-align: left;
+    text-align: left;
     color: azure;
     line-height: 1.5;
     font-family: "Inter", sans-serif;
@@ -1070,6 +1070,78 @@ font-family: "Merriweather", serif
     margin: 0 auto;  
   }
   .vguitarexcodeh2 { color: #2baeb5; font-family: "Merriweather", serif}
+  /*A Coffee Spot PD*/
+  .acsPDhero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .acsPDh1 {
+    font-size: 2.5rem;
+    color: #2baeb5;
+    font-family: "Merriweather", serif;
+    line-height: 1.5; 
+    padding-top: 15rem; 
+  }
+  .acsPDp {
+   text-align: left;
+    color: azure;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;  
+  }
+  .acsPDsec2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  .acsex1, .acsex2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+.acsimg {
+    width: 100%;
+    border-radius: 9px;
+    height: auto;
+    display: block;
+    box-shadow: 2px 2px 9px white,
+                 -2px -2px 9px white;
+    transition: transform 0.3s ease; 
+  }
+  .acsimg:hover {
+    transform: scale(1.04);
+}
+.acsfigcap {
+    text-align: center;
+    color: azure;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+  }
+  .acsexcode1, .acsexcode2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem; 
+    margin: 0 auto;  
+  }
+  .acsexcodeh2 { color: #2baeb5; font-family: "Merriweather", serif}
 /*project details end*/
 
 
@@ -1432,7 +1504,15 @@ footer {
 }
 .vguitarex1, .vguitarex2 { flex-direction: row;}
 .vguitarexcode2 { flex-direction: row;}
-
+/*a coffee spot PD*/
+.acsPDh1 {
+    font-size: 5rem; 
+  }
+  .acsex1 {
+    flex-direction: row;
+  }
+  .acsex2 { flex-direction: row;}
+  .acsexcode2 { flex-direction: row;}
 /*portfolio ends, contact begins*/
 .contactsec1 {
     flex-direction: row;
